@@ -7,12 +7,12 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="416dp"
-        android:layout_height="102dp"
+        android:layout_width="420dp"
+        android:layout_height="96dp"
+        android:background="@drawable/roundbtmdiv"
         tools:context=".MainActivity"
-        tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="629dp"
-        android:background="@android:color/holo_blue_dark">
+        tools:layout_editor_absoluteX="-8dp"
+        tools:layout_editor_absoluteY="635dp">
 
         <Button
             android:id="@+id/button"
@@ -21,8 +21,9 @@
             android:layout_gravity="center"
             android:layout_marginLeft="80dp"
             android:background="@drawable/roundshapebtn"
+            android:color="#fff"
             android:text="SEND"
-            android:textColor="#fff" />
+            android:textColor="#000" />
 
         <Button
             android:id="@+id/button2"
@@ -31,7 +32,8 @@
             android:layout_gravity="center"
             android:layout_marginLeft="20dp"
             android:background="@drawable/roundshapebtn"
+            android:color="#fff"
             android:text="RECIEVE"
-            android:textColor="#fff"/>
+            android:textColor="#000" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

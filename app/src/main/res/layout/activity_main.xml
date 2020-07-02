@@ -5,45 +5,56 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="161dp"
+        tools:srcCompat="@tools:sample/avatars"/>
+
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:gravity="bottom"
-        tools:ignore="MissingConstraints">
-        <LinearLayout
-        android:layout_width="match_parent"
         android:layout_height="96dp"
-        android:background="#73c7ff"
-        tools:context=".MainActivity"
-        tools:layout_editor_absoluteX="-8dp"
-        tools:layout_editor_absoluteY="635dp">
+        android:gravity="bottom"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="633dp">
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="120dp"
-            android:layout_height="43dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="80dp"
-            android:background="@drawable/roundshapebtn"
-            android:color="#fff"
-            android:text="SEND"
-            android:textColor="#000"
-            android:drawableRight="@drawable/ic_launcher_foreground"
-            android:paddingRight="16dip"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:background="#73c7ff"
+            tools:context=".MainActivity">
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="120dp"
-            android:layout_height="43dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/roundshapebtn"
-            android:color="#fff"
-            android:text="RECIEVE"
-            android:textColor="#000"
-            android:drawableRight="@drawable/ic_launcher_background"
-            android:paddingRight="16dip"/>
+            <Button
+                android:id="@+id/sendBtn"
+                android:layout_width="120dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/roundshapebtn"
+                android:color="#fff"
+                android:drawableRight="@drawable/ic_launcher_foreground"
+                android:paddingRight="16dip"
+                android:text="SEND"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="120dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/roundshapebtn"
+                android:color="#fff"
+                android:drawableRight="@drawable/ic_launcher_background"
+                android:paddingRight="16dip"
+                android:text="RECIEVE"
+                android:textColor="#000" />
 
         </LinearLayout>
     </RelativeLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

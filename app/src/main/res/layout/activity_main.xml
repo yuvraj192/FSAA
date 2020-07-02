@@ -5,9 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <LinearLayout
-        android:layout_width="420dp"
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom">
+        <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="96dp"
         android:background="#73c7ff"
         tools:context=".MainActivity"
@@ -37,5 +40,7 @@
             android:color="#fff"
             android:text="RECIEVE"
             android:textColor="#000" />
-    </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

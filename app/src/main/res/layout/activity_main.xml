@@ -23,7 +23,9 @@
             android:background="@drawable/roundshapebtn"
             android:color="#fff"
             android:text="SEND"
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:drawableRight="@drawable/ic_launcher_foreground"
+            android:paddingRight="16dip"/>
 
         <Button
             android:id="@+id/button2"

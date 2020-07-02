@@ -40,7 +40,9 @@
             android:background="@drawable/roundshapebtn"
             android:color="#fff"
             android:text="RECIEVE"
-            android:textColor="#000" />
+            android:textColor="#000"
+            android:drawableRight="@drawable/ic_launcher_background"
+            android:paddingRight="16dip"/>
 
         </LinearLayout>
     </RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home"
+    android:background="@drawable/bg_purple"
+    android:paddingTop="20dp">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp">
+
+        <!-- <Button
+             android:id="@+id/sendBtn2"
+             android:layout_width="48dp"
+             android:layout_height="46dp"
+             android:layout_alignParentRight="true"
+             android:layout_gravity="center"
+             android:background="@drawable/roundshapebtn"
+             android:color="#32e69e"
+             android:drawableRight="@drawable/ic_launcher_foreground"
+             android:gravity="right"
+             android:paddingRight="12dip"
+             android:textColor="#fff"
+             tools:layout_editor_absoluteX="314dp"
+             tools:layout_editor_absoluteY="40dp" /> -->
+
+        <ImageView
+            android:layout_marginRight="20dp"
+            android:id="@+id/profilePicture"
+            android:layout_width="48dp"
+            android:layout_height="46dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/testavt"
+            android:background="@drawable/testavt"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text=""
+            android:textSize="42dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="58dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="166dp"
+            android:layout_height="27dp"
+            android:text="Welcome"
+            android:textSize="19dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="43dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="213dp"
+        android:layout_height="75dp"
+        android:gravity="left"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="20dp">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="106dp"
+        android:background="@drawable/bg_header"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <WebView
+            android:id="@+id/homeContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#3292e6"
+        android:color="#fff"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="5dp"
+        >
+
+        <Button
+            android:id="@+id/sendBtn"
+            android:layout_width="47dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/roundshapebtn"
+            android:color="#fff"
+            android:visibility="invisible"
+            android:drawableRight="@drawable/ic_launcher_background"
+            android:paddingRight="12dp"
+            android:textColor="#000"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/recieveBtn"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundshapebtn"
+            android:color="#fff"
+            android:layout_marginLeft="80dp"
+            android:layout_alignParentLeft="true"
+            android:drawableRight="@drawable/ic_launcher_foreground"
+            android:paddingRight="12dp"
+            android:visibility="invisible"
+            android:textColor="#fff"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <WebView
+            android:id="@+id/btmBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

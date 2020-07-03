@@ -5,159 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/bg_purple"
-    android:padding="20dp">
+    android:background="@drawable/bg_purple">
 
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout1"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp">
-
-       <!-- <Button
-            android:id="@+id/sendBtn2"
-            android:layout_width="48dp"
-            android:layout_height="46dp"
-            android:layout_alignParentRight="true"
-            android:layout_gravity="center"
-            android:background="@drawable/roundshapebtn"
-            android:color="#32e69e"
-            android:drawableRight="@drawable/ic_launcher_foreground"
-            android:gravity="right"
-            android:paddingRight="12dip"
-            android:textColor="#fff"
-            tools:layout_editor_absoluteX="314dp"
-            tools:layout_editor_absoluteY="40dp" /> -->
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="48dp"
-            android:layout_height="46dp"
-            android:layout_alignParentRight="true"
-            tools:src="@tools:sample/avatars"
-            tools:srcCompat="@tools:sample/avatars" />
-    </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="213dp"
-            android:layout_height="75dp"
-            android:gravity="left"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="20dp"
-            tools:layout_editor_absoluteY="20dp">
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="221dp" />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="166dp"
-                android:layout_height="27dp"
-                android:text="Welcome Back"
-                android:textSize="19dp"
-                android:textStyle="bold"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="43dp" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text="Divyansh"
-                android:textSize="42dp"
-                android:textStyle="bold"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="58dp" />
-
-        </RelativeLayout>
-
-    <LinearLayout
+    <WebView
+        android:id="@+id/loginView"
         android:layout_width="match_parent"
-        android:layout_height="170dp"
-        android:layout_marginTop="106dp"
-        android:background="@drawable/bg_header"
-        app:layout_constraintStart_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
 
         <Button
-            android:id="@+id/sendBtn"
-            android:layout_width="47dp"
+            android:id="@+id/valid"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="130dp"
-            android:background="@drawable/roundshapebtn"
-            android:color="#fff"
-            android:drawableRight="@drawable/ic_launcher_foreground"
-            android:paddingRight="12dip"
-            android:textColor="#000" />
+            android:layout_x="47dp"
+            android:layout_y="33dp"
+            android:text="valid"
+            android:visibility="invisible"/>
 
         <Button
-            android:id="@+id/button2"
-            android:layout_width="47dp"
+            android:id="@+id/refuse"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/roundshapebtn"
-            android:color="#fff"
-            android:drawableRight="@drawable/ic_launcher_background"
-            android:paddingRight="12dip"
-            android:textColor="#000" />
-    </LinearLayout>
+            android:layout_x="194dp"
+            android:layout_y="188dp"
+            android:text="refuse"
+            android:visibility="invisible"/>
+    </WebView>
 
-
-
-    <!--
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="96dp"
-            android:background="#73c7ff"
-            tools:context=".MainActivity"
-            tools:layout_editor_absoluteX="2dp"
-            tools:layout_editor_absoluteY="499dp"
-            tools:ignore="MissingConstraints">
-
-            <Button
-                android:id="@+id/sendBtn"
-                android:layout_width="120dp"
-                android:layout_height="43dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="80dp"
-                android:background="@drawable/roundshapebtn"
-                android:color="#fff"
-                android:drawableRight="@drawable/ic_launcher_foreground"
-                android:paddingRight="16dip"
-                android:text="SEND"
-                android:textColor="#000" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="120dp"
-                android:layout_height="43dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/roundshapebtn"
-                android:color="#fff"
-                android:drawableRight="@drawable/ic_launcher_background"
-                android:paddingRight="16dip"
-                android:text="RECIEVE"
-                android:textColor="#000" />
-
-            <RelativeLayout
-                android:layout_width="fill_parent"
-                android:layout_height="96dp"
-                android:gravity="bottom"
-                tools:ignore="MissingConstraints">
-
-            </RelativeLayout>
-
-        </LinearLayout> -->
 </RelativeLayout>

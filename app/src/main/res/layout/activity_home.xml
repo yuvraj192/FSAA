@@ -95,7 +95,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="#3292e6"
+        android:background="#fff"
         android:color="#fff"
         android:layout_alignParentBottom="true"
         android:orientation="vertical"

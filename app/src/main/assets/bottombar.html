@@ -5,33 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="tailwind.css" rel="stylesheet">
     <script src="jquery.js"></script>
+    <link rel="stylesheet" href="icons.css">
+    <style>
+        .unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+    </style>
 </head>
-<body class="text-white mx-10" style="margin-top:-25px;background-color:#3292e6;height:45px !important;max-height: 45px !important; min-height:45px !important; overflow:hidden;">
+<body class="text-white mx-10 unselectable" style="margin-top:-25px;background-color:#fff;height:45px !important;max-height: 45px !important; min-height:45px !important; overflow:hidden;">
 <header class="text-gray-700 body-font">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-            <button class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0 mx-5">Button
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
+            <button class="send inline-flex items-center bg-transparent border-2 border-solid border-blue-500 py-1 px-3 focus:outline-none rounded-full text-blue-500 mt-4 md:mt-0 mx-2">SEND <i class="material-icons">file_upload</i>
             </button>
-            <button class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0 mx-5">Button
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
+            <button class="recieve inline-flex items-center bg-transparent border-2 border-solid border-blue-500 py-1 px-3 focus:outline-none rounded-full text-blue-500 mt-4 md:mt-0 mx-5">RECEIVE <i class="material-icons">file_download</i>
             </button>
         </div>
     </div>
 </header>
 </body>
 <script>
-/*
     $(".send").click(() => {
         send.performClick()
     })
     $(".recieve").click(() => {
         recieve.performClick()
     })
-    */
 </script>
 </html>

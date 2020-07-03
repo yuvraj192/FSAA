@@ -4,8 +4,7 @@
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
-
-
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -14,9 +13,11 @@
         android:roundIcon="@drawable/ic_workflow_mark_on_white"
         android:supportsRtl="false"
         android:theme="@style/AppTheme">
+        <activity android:name=".SendActivity"></activity>
+        <activity android:name=".snedActivity" />
         <activity
             android:name=".activity2"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".home" />
         <activity android:name=".MainActivity">
             <intent-filter>

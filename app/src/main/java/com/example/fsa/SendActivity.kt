@@ -1,20 +1,18 @@
 package com.example.fsa
 
 import android.graphics.Bitmap
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.webkit.JavascriptInterface
 import android.webkit.WebChromeClient
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_activity2.*
 
-
-class activity2 : AppCompatActivity() {
+class SendActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_activity2)
+        setContentView(R.layout.activity_send)
 
         if(webView != null){
             val webSettings  = webView!!.settings
@@ -31,7 +29,7 @@ class activity2 : AppCompatActivity() {
                 }
             } , "close" ) ;
 
-            webView!!.loadUrl("file:///android_asset/recieve.html")
+            webView!!.loadUrl("file:///android_asset/send.html")
 
             webView!!.webViewClient = object: WebViewClient(){
                 override fun onPageStarted(view: WebView?, url: String?, favicon: Bitmap?) {
@@ -43,8 +41,8 @@ class activity2 : AppCompatActivity() {
                 }
             }
         }
-    }
 
+    }
     override fun onBackPressed() {
         if(webView!!.canGoBack()){
             finish()

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="tailwind.css" rel="stylesheet">
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="icons.css">
+    <style>
+        .progress-ring__circle {
+  -webkit-transition: 0.35s stroke-dashoffset;
+  transition: 0.35s stroke-dashoffset;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+}
+    </style>
+</head>
+<body>
+<header class="text-gray-700 body-font">
+    <div class="container mx-auto flex p-5 flex-col items-center">
+        <nav class="flex items-center text-base fixed left-0 top-0 mt-6 ml-5">
+            <a onclick="closeActivity()" class="mr-5 hover:text-gray-900"><i class="material-icons">clear</i></a>
+        </nav>
+        <a class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+            <span class="ml-3 text-xl">Nearby Sharing</span>
+        </a>
+        <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0 fixed right-0 top-0 mr-5">
+            <button class="inline-flex items-center bg-transparernt border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded-full text-base mt-4 md:mt-0"> <i class="material-icons">message</i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<section class="text-gray-700 body-font">
+    <div class="container px-5 py-24">
+        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+            <div class="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center">
+                <!--<div class="w-40 h-40 inline-flex items-center justify-center rounded-full mb-5 flex-shrink-0">
+                    <svg class="progress-ring" width="120" height="120">
+                        <circle class="progress-ring__circle" stroke="#3492eb" stroke-width="4" fill="transparent" r="52" cx="60" cy="60"/>
+                    </svg>
+                </div> -->
+                <div class="flex-grow w-full h-40 bg-gray-200 text-black p-10 rounded-lg">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Looking for Nearby devicess</h2>
+                    <span class="text-gray-600 text-sm">as Divyansh's Phone</span>
+                    <p class="leading-relaxed text-base opacity-0">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="text-black bg-gray-200 body-font fixed inset-x-0 bottom-0">
+    <div class="container px-5 py-4 mx-auto flex items-center sm:flex-row flex-col">
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start items-center text-center">
+            <i class="material-icons mr-2 text-gray-500">info_outline</i>
+      <a class="text-gray-500 text-left">
+          <span class="text-xs">Make sure that both devices are unlocked, close together and have Bluetooth and Location turned on. <span class="text-blue-300 text-xs focus:underline">Learn more</span> </span>
+      </a>
+    </span>
+    </div>
+</footer>
+
+</body>
+<script>
+    function closeActivity(){
+        close.performClick()
+    }
+
+ /*  var circle = document.querySelector('circle');
+var radius = circle.r.baseVal.value;
+var circumference = radius * 2 * Math.PI;
+
+circle.style.strokeDasharray = `${circumference} ${circumference}`;
+circle.style.strokeDashoffset = `${circumference}`;
+
+function setProgress(percent) {
+  const offset = circumference - percent / 100 * circumference;
+  circle.style.strokeDashoffset = offset;
+}
+
+setProgress(Math.floor(Math.random() * 101));
+
+*/
+</script>
+</html>

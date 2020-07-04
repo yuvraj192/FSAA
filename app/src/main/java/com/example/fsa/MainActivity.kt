@@ -1,26 +1,60 @@
 package com.example.fsa
 
+import androidx.appcompat.app.AppCompatActivity
+
+import androidx.core.app.ActivityCompat
+
+
 import android.Manifest
-import android.app.Activity
+
+import android.content.BroadcastReceiver
+
+import android.content.Context
 import android.content.Intent
+
+import android.content.IntentFilter
+
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
-import androidx.appcompat.app.AppCompatActivity
+
+import android.net.wifi.p2p.WifiP2pDevice
+
+import android.net.wifi.p2p.WifiP2pDeviceList
+
+import android.net.wifi.p2p.WifiP2pManager
+
 import android.os.Bundle
+
+import android.view.View
+
+import android.widget.ArrayAdapter
+
+import android.widget.Button
+
+import android.widget.EditText
+
+import android.widget.ListView
+
+import android.widget.TextView
+
+import android.net.wifi.WifiManager
 import android.webkit.JavascriptInterface
 import android.webkit.WebChromeClient
 import android.webkit.WebView
 import android.webkit.WebViewClient
+
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_activity2.*
 import kotlinx.android.synthetic.main.activity_main.*
+
+
+import java.util.ArrayList
+
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
 
         if(loginView != null){
             val webSettings  = loginView!!.settings

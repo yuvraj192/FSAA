@@ -42,11 +42,12 @@
                         <circle class="progress-ring__circle" stroke="#3492eb" stroke-width="4" fill="transparent" r="52" cx="60" cy="60"/>
                     </svg>
                 </div> -->
-                <div class="flex-grow w-full h-40 bg-gray-200 text-black p-10 rounded-lg">
-                    <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Looking for Nearby devicess</h2>
-                    <span class="text-gray-600 text-sm">as Divyansh's Phone</span>
+                <div class="flex-grow w-full h-40 bg-gray-200 text-black p-10 rounded-lg shadow-lg">
+                    <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Looking for Nearby devices</h2>
+                    <span class="text-gray-600 text-sm">as <span class="username"></span>'s Phone</span>
                     <p class="leading-relaxed text-base opacity-0">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
                 </div>
+                <div class="flex-wrap w-full flex h-auto bg-gray-100 rounded-b-lg foundreceivers p-5"></div>
             </div>
         </div>
     </div>
@@ -65,10 +66,17 @@
 
 </body>
 <script>
+
+$(document).ready(() => {
+    discover.performClick()
+})
+
     function closeActivity(){
         close.performClick()
     }
-
+function updateUser(user){
+        $(".username").html(user)
+    }
  /*  var circle = document.querySelector('circle');
 var radius = circle.r.baseVal.value;
 var circumference = radius * 2 * Math.PI;
@@ -84,5 +92,14 @@ function setProgress(percent) {
 setProgress(Math.floor(Math.random() * 101));
 
 */
+
+function addReciever(user){
+$(".foundreceivers").html("")
+    var recvTemplate = `<div class="receiver items-center justify-center bg-transparent h-full hover:bg-gray-200 p-2 rounded mx-auto">
+                        <img src="avt2.png" alt="" class="rounded-full h-10 w-10 mx-auto border-2 border-blue-400">
+                        <span class="recvName text-xs">${user}'s <br> Phone</span>
+                    </div>`
+    $(".foundreceivers").append(recvTemplate)
+}
 </script>
 </html>

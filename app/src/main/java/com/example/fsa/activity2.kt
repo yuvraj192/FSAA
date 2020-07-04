@@ -1,8 +1,9 @@
 package com.example.fsa
 
+import android.content.Context
 import android.graphics.Bitmap
+import android.net.wifi.WifiManager
 import android.os.Bundle
-import android.util.Log
 import android.webkit.JavascriptInterface
 import android.webkit.WebChromeClient
 import android.webkit.WebView
@@ -16,6 +17,11 @@ class activity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_activity2)
 
+        val loginIntent = intent
+        val user: String?
+
+        user = loginIntent.getStringExtra("user");
+
         if(webView != null){
             val webSettings  = webView!!.settings
             webView.settings.javaScriptEnabled = true
@@ -26,7 +32,6 @@ class activity2 : AppCompatActivity() {
             webView.addJavascriptInterface(object : Any() {
                 @JavascriptInterface
                 fun performClick () {
-                    //Toast.makeText(this@MainActivity, strl, Toast.LENGTH_SHORT).show()
                     finish()
                 }
             } , "close" ) ;
@@ -40,10 +45,15 @@ class activity2 : AppCompatActivity() {
 
                 override fun onPageFinished(view: WebView?, url: String?) {
                     super.onPageFinished(view, url)
+                    webView.loadUrl("javascript:updateUser('$user') ")
                 }
             }
         }
+
+
+
     }
+
 
     override fun onBackPressed() {
         if(webView!!.canGoBack()){

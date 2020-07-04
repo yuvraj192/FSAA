@@ -73,7 +73,7 @@
                 </div>
                 <div class="flex-grow">
                     <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Visible to Nearby devices</h2>
-                    <span class="text-gray-600 text-sm">as Divyansh's Phone</span>
+                    <span class="text-gray-600 text-sm">as <span class="username"></span>'s Phone</span>
                     <p class="leading-relaxed text-base opacity-0">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
                 </div>
             </div>
@@ -96,6 +96,9 @@
 <script>
     function closeActivity(){
         close.performClick()
+    }
+    function updateUser(user){
+        $(".username").html(user)
     }
 </script>
 </html>

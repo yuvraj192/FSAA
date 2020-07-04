@@ -2,9 +2,25 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.fsa">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.CHANGE_WIFI_STATE"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.CHANGE_NETWORK_STATE"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE"
+        android:required="true" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -13,8 +29,8 @@
         android:roundIcon="@drawable/ic_workflow_mark_on_white"
         android:supportsRtl="false"
         android:theme="@style/AppTheme">
-        <activity android:name=".SendActivity"></activity>
-        <activity android:name=".snedActivity" />
+        <activity android:name=".sendActivityJava"></activity>
+        <activity android:name=".SendActivity" />
         <activity
             android:name=".activity2"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
